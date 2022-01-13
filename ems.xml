@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="ems.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-stylesheet href="ems.xsl" type="text/xsl"?>
+<company>
+    <Employee>
+        <Emp_ID>E1</Emp_ID>
+        <Name>James</Name>
+        <Age>24</Age>
+        <Salary>50000</Salary>
+        <Email>james123@gmail.com</Email>
+        <Phone_No>8735116352</Phone_No>
+        <Designation>Tech Assistant</Designation>
+    </Employee>
+    <Employee>
+        <Emp_ID>E1</Emp_ID>
+        <Name>John paul</Name>
+        <Age>34</Age>
+        <Salary>80000</Salary>
+        <Email>John.paul@gmail.com</Email>
+        <Phone_No>8735116352</Phone_No>
+        <Designation>Manager</Designation>
+    </Employee>
+    <Employee>
+        <Emp_ID>E1</Emp_ID>
+        <Name>Arjun kumar</Name>
+        <Age>38</Age>
+        <Salary>120000</Salary>
+        <Email>arjun.kumar@gmail.com</Email>
+        <Phone_No>8735116352</Phone_No>
+        <Designation>Executive</Designation>
+    </Employee>   
+</company>
