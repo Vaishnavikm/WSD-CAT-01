@@ -13,19 +13,19 @@
                     padding: 0;
                 }
                 body{
-                    background-color: #00ff00;
-                    font-family: 'Montserrat';
+                    background-color: #f1f1f1;
+                    font-family: 'Helvetica';
                 }
                 h1{
                     text-align: center;
                     color: white;
-                    background-color: #333333;
+                    background-color: #444444;
                     padding:1%;
                 }
                 table{
-                    background-color: #e3e3e3;
-                    margin:2% 5%;
-                    width:90%;
+                    background-color: #f7f7f7;
+                    margin:1% 2%;
+                    width:80%;
                 }
                 td, th{
                     text-align:left;
@@ -35,7 +35,7 @@
         </head>
         <body>
             <h1>Employee Management System</h1>
-            <table>
+            <table border="1">
                 <tr>
                     <th>ID</th>
                     <th>NAME</th>
