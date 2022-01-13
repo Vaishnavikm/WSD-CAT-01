@@ -1,32 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="ems.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <?xml-stylesheet href="ems.xsl" type="text/xsl"?>
-<company>
-    <Employee>
-        <Emp_ID>E1</Emp_ID>
-        <Name>James</Name>
-        <Age>24</Age>
-        <Salary>50000</Salary>
-        <Email>james123@gmail.com</Email>
-        <Phone_No>8735116352</Phone_No>
-        <Designation>Tech Assistant</Designation>
+<Company>
+    <Employee id="1">
+        <Emp-name>James Mathew</Emp-name>
+        <Emp-age>45</Emp-age>
+        <Emp-salary>150000</Emp-salary>
+        <Emp-emailid>james.mathew@gmail.com</Emp-emailid>
+        <Emp-phonenum>9274762628</Emp-phonenum>
+        <Emp-designation>Manager</Emp-designation>
     </Employee>
-    <Employee>
-        <Emp_ID>E1</Emp_ID>
-        <Name>John paul</Name>
-        <Age>34</Age>
-        <Salary>80000</Salary>
-        <Email>John.paul@gmail.com</Email>
-        <Phone_No>8735116352</Phone_No>
-        <Designation>Manager</Designation>
+    <Employee id="2">
+        <Emp-name>Arjun Kumar</Emp-name>
+        <Emp-age>27</Emp-age>
+        <Emp-salary>125000</Emp-salary>
+        <Emp-emailid>arjun.kumar@gmail.com</Emp-emailid>
+        <Emp-phonenum>8237723688</Emp-phonenum>
+        <Emp-designation>Executive</Emp-designation>
     </Employee>
-    <Employee>
-        <Emp_ID>E1</Emp_ID>
-        <Name>Arjun kumar</Name>
-        <Age>38</Age>
-        <Salary>120000</Salary>
-        <Email>arjun.kumar@gmail.com</Email>
-        <Phone_No>8735116352</Phone_No>
-        <Designation>Executive</Designation>
-    </Employee>   
-</company>
+    <Employee id="3">
+        <Emp-name>Anagha M</Emp-name>
+        <Emp-age>25</Emp-age>
+        <Emp-salary>70000</Emp-salary>
+        <Emp-emailid>anagha.m@gmail.com</Emp-emailid>
+        <Emp-phonenum>7365929485</Emp-phonenum>
+        <Emp-designation>Developer</Emp-designation>
+    </Employee>
+    <Employee id="4">
+        <Emp-name>Sujeet S</Emp-name>
+        <Emp-age>38</Emp-age>
+        <Emp-salary>75000</Emp-salary>
+        <Emp-emailid>sujeet.s@gmail.com</Emp-emailid>
+        <Emp-phonenum>8924657365</Emp-phonenum>
+        <Emp-designation>HR Manager</Emp-designation>
+    </Employee>
+    <Employee id="5">
+        <Emp-name>Sanjana gupta</Emp-name>
+        <Emp-age>28</Emp-age>
+        <Emp-salary>55000</Emp-salary>
+        <Emp-emailid>sanjana.gupta@gmail.com</Emp-emailid>
+        <Emp-phonenum>8164734825</Emp-phonenum>
+        <Emp-designation>Tester</Emp-designation>
+    </Employee>
+</Company>

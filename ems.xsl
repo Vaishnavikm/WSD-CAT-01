@@ -2,50 +2,72 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
         <html>
-            <body>
-                <h1 style="text-align:center">Employee Management system</h1>
-                <h2>Employee Details</h2>
-                <table border="1">
+        <head>
+            <meta charset="UTF-8"/>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <title>Employee Management System</title>
+            <style>
+                *{
+                    margin: 0;
+                    padding: 0;
+                }
+                body{
+                    background-color: #00ff00;
+                    font-family: 'Montserrat';
+                }
+                h1{
+                    text-align: center;
+                    color: white;
+                    background-color: #333333;
+                    padding:1%;
+                }
+                table{
+                    background-color: #e3e3e3;
+                    margin:2% 5%;
+                    width:90%;
+                }
+                td, th{
+                    text-align:left;
+                    padding:1.5%;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Employee Management System</h1>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    <th>SALARY</th>
+                    <th>EMAIL</th>
+                    <th>PHONE</th>
+                    <th>DESIGNATION</th>
+                    <th>PROMOTION</th>
+                </tr>
+                <xsl:for-each select="Company/Employee">
                     <tr>
-                        <th style="text-align:left">ID</th>
-                        <th style="text-align:left">Name</th>
-                        <th style="text-align:left">Age</th>
-                        <th style="text-align:left">Salary</th>
-                        <th style="text-align:left">Email</th>
-                        <th style="text-align:left">Phone_No.</th>
-                        <th style="text-align:left">Designation</th>
-                    </tr>
-            
-                    <xsl:for-each select="company/Employee">
-                        <xsl:sort select="Emp_ID" />
-                        <xsl:if test="Age > 31">
-                            <tr>
-                                <td>
-                                    <xsl:value-of select="Emp_ID" />
-                                </td>
-                                <td>
-                                    <xsl:value-of select="Name" />
-                                </td>
-                                <td>
-                                    <xsl:value-of select="Age" />
-                                </td>
-                                <td>
-                                    <xsl:value-of select="Salary" />
-                                </td>
-                                <td>
-                                    <xsl:value-of select="Email" />
-                                </td>
-                                <td>
-                                    <xsl:value-of select="Phone_No" />
-                                </td>
-                                <td>
-                                    <xsl:value-of select="Designation" />
-                                </td>
-                            </tr>
+                        <td><xsl:value-of select="@id"/></td>
+                        <td><xsl:value-of select="Emp-name"/></td>
+                        <td><xsl:value-of select="Emp-age"/></td>
+                        <td><xsl:value-of select="Emp-salary"/></td>
+                        <td><xsl:value-of select="Emp-emailid"/></td>
+                        <td><xsl:value-of select="Emp-phonenum"/></td>
+                        <td><xsl:value-of select="Emp-designation"/></td>
+                        <xsl:if test="Emp-age &gt; 50">
+                            <td>Associate Project Manager</td>
                         </xsl:if>
-                    </xsl:for-each>
-                </table>   
-            </body>
+                        <xsl:if test="Emp-age &gt; 41">
+                            <td>Team Leader</td>
+                        </xsl:if>
+                        <xsl:if test="Emp-age &lt; 40">
+                            <td>Developer</td>
+                        </xsl:if>
+                    </tr>
+                </xsl:for-each>
+            </table>
+        </body>
         </html>
     </xsl:template>
 </xsl:stylesheet>
